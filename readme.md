@@ -1,9 +1,9 @@
 
 # Mini Scheduling API
-This is a very stripped down api allowing you to add emplouyees and schedule shifts for them
+Hello! This is a mini RESTful API coding challenge, with the intention of creating employees in a database and scheduling work shifts for them. You can create, remove, update, and delete `Users` and `Shifts` using the endpoints
 
 ## Note 
-all times are in UTC for simplicity's sake
+All times are in UTC for simplicity's sake
 
 ## Installation
 1. Clone repo
@@ -17,6 +17,8 @@ all times are in UTC for simplicity's sake
 9. you can hit the api at `localhost:5000/api/v1`
 
 ## Endpoints
+There is currently one example `user` in the databse (`id = 1`) and one example `shift` (`id=1`)
+
 Users:
 ```
 {
