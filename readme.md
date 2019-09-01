@@ -39,19 +39,21 @@ DELETE /api/v1/users/:id
 ```
 
 Shifts:
+You can only `GET` or `POST` to shifts by specifying the userID in the URL
+You cannot `POST` or `PUT` a shift that conflicts with an existing shift!
 ```
 {
 	"id": 3,
-	"user": 4, // userID
+	"user": 4, // id of user
 	"startTime": "09-01-2019 08:00:00",
 	"endTime": "09-01-2019 13:00:00"
 }
 ```
 
 ```
-GET /api/v1/shifts/user/:userID //specify user to GET all shifts
+GET /api/v1/shifts/user/:userID
 GET /api/v1/shifts/:id
-POST /api/v1/shifts/user/:userID //specify user in URL to POST to
+POST /api/v1/shifts/user/:userID
 PUT /api/v1/shifts/:id
 DELETE /api/v1/shifts/:id
 ```
