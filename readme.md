@@ -12,8 +12,8 @@ All times are in UTC for simplicity's sake
 *  Ensure you have MySQL (version 8+) installed.  
 	*  For Macs, you can run `brew install mysql`
 *  Run `mysql.server start` to start up the database
-*  Run `mysql -u root < sql/run.sql` which will build the database schema and insert some test data 
-	*  If it asks for a root password, it should be `password`
+*  Run `mysql -u root -p < sql/run.sql` which will build the database schema and insert some test data 
+	*  if you are already running `password`
 	*  If you want to access the databse directly the user is `scheduling` and the password is `pw`
 *  run `npm run start` to start the application
 *  you can hit the api at `localhost:5000/api/v1`
