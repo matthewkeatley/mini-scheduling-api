@@ -9,8 +9,8 @@ class VerifyRequest {
 	/**
 	 * strip out properties from req.body that are not in the table definition 
 	 * or are not updateable
-	 * @param {*} body the req.body
-	 * @param {*} allowed property names allowed in the request
+	 * @param {Object} body the req.body
+	 * @param {Array} allowed property names allowed in the request
 	 */
 	strip(body, allowed) {
 		return allowed.filter(r => body[r]).reduce((acc, curr) => {
