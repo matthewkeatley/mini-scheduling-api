@@ -7,7 +7,7 @@ All times are in UTC for simplicity's sake
 
 ## Installation
 *  Clone repo
-*  `cd` into root dir
+*  `cd` into _root_ dir
 *  `npm i` to get necessary packages
 *  Ensure you have MySQL (version 8+) installed.  
 	*  For Macs, you can run `brew install mysql`
@@ -16,8 +16,8 @@ All times are in UTC for simplicity's sake
 	* If you **DO NOT** have any previous installs of mysql:
 		* run `mysql -u root < sql/run.sql`
 	* If you **DO** have mysql previously set up:
-		* run `mysql -u root -p < sql/run.sql` and enter your root password.
-	* If you are having root password issues, please refer to [this article](https://medium.com/@benmorel/remove-the-mysql-root-password-ba3fcbe29870)
+		* run `mysql -u root -p < sql/run.sql` and enter your _root_ password.
+	* If you are having password issues, please refer to [this article](https://medium.com/@benmorel/remove-the-mysql-root-password-ba3fcbe29870)
 *  run `npm run start` to start the application
 *  you can hit the api at `localhost:5000/api/v1`
 
