@@ -2,8 +2,8 @@
 	"development": {
 		"sql": {
 			"host": "localhost",
-			"user": "root",
-			"password": "password",
+			"user": "scheduling",
+			"password": "pw",
 			"database": "schedulingDB"
 		}
 	}
