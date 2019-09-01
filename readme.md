@@ -45,8 +45,8 @@ DELETE /api/v1/users/:id
 ```
 
 ### Shifts:
-You can only `GET` or `POST` to shifts by specifying the userID in the URL
-You cannot `POST` or `PUT` a shift that conflicts with an existing shift!
+* You can only `GET` or `POST` to shifts by specifying the userID in the URL
+* You cannot `POST` or `PUT` a shift that conflicts with an existing shift!
 
 #### Shifts Object:
 ```
