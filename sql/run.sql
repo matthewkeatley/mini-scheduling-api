@@ -24,10 +24,13 @@ CREATE TABLE shifts (
 	fk_user INT NOT NULL,
 	startTime DATETIME NOT NULL,
 	endTime DATETIME NOT NULL,
-	available BOOLEAN,
 	FOREIGN KEY(fk_user) REFERENCES users(id)
 );
 
 Use schedulingDB;
 INSERT INTO users (firstName, lastName, email, phone, isManager, contactMethod)
 VALUES ('Test', 'User', 'test.user@test.com', '123-456-7890', false, 'phone');
+
+Use schedulingDB;
+INSERT INTO shifts (fk_user, startTime, endTime)
+VALUES (1, '2019-08-20 10:00:00', '2019-08-20 11:00:00');
