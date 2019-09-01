@@ -16,7 +16,7 @@ class Users {
 		const id = parseInt(req.params.id, 10);
 		connection.query('SELECT * FROM users WHERE id = ?', id, (err, rows) => {
 			if(err) throw err;
-			if(!rows.length) return res.status(404).send({ success: false, message: 'user does not exist'});
+			if(!rows.length) return res.status(404).send({ success: false, message: 'user not found'});
 			return res.status(200).send(rows);
 		});
 	}
@@ -43,6 +43,14 @@ class Users {
 
 		const put = verifyRequest.strip(body, properties);
 		connection.query(`UPDATE users SET ? WHERE id = ?`, [put, id], (err) => {
+			if(err) throw err;
+			return res.status(200).send({ success: true });
+		});
+	}
+
+	delete(req, res) {
+		const id = parseInt(req.params.id, 10);
+		connection.query('DELETE FROM users WHERE id = ?', id, (err, rows, next) => {
 			if(err) throw err;
 			return res.status(200).send({ success: true });
 		});
