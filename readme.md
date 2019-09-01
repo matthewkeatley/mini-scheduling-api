@@ -22,7 +22,7 @@ All times are in UTC for simplicity's sake
 *  you can hit the api at `localhost:5000/api/v1`
 
 ## Endpoints
-There is currently an example `user` in the databse (`id = 1`) and an example `shift` (`id=1`)
+There is currently an example `user` in the databse (`id = 1`) and an example `shift` (`id = 1`)
 
 ### Users:
 #### Users Object:
