@@ -63,7 +63,7 @@ DELETE /api/v1/users/:id
 
 #### Shifts Endpoints:
 ```
-GET /api/v1/shifts/user/:userID //restrict **start** and **end** times in URL params
+GET /api/v1/shifts/user/:userID //restrict start and end times in URL params
 GET /api/v1/shifts/:id
 POST /api/v1/shifts/user/:userID
 PUT /api/v1/shifts/:id
