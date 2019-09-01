@@ -21,7 +21,8 @@ All times are in UTC for simplicity's sake
 ## Endpoints
 There is currently an example `user` in the databse (`id = 1`) and one example `shift` (`id=1`)
 
-Users:
+### Users:
+#### Users Object:
 ```
 {
    "id": 445
@@ -34,6 +35,7 @@ Users:
 }
 ```
 
+#### Users Endpoints:
 ```
 GET /api/v1/users
 GET /api/v1/users/:id
@@ -42,9 +44,11 @@ PUT /api/v1/users/:id
 DELETE /api/v1/users/:id
 ```
 
-Shifts:
+### Shifts:
 You can only `GET` or `POST` to shifts by specifying the userID in the URL
 You cannot `POST` or `PUT` a shift that conflicts with an existing shift!
+
+#### Shifts Object:
 ```
 {
 	"id": 3,
@@ -54,6 +58,7 @@ You cannot `POST` or `PUT` a shift that conflicts with an existing shift!
 }
 ```
 
+#### Shifts Endpoints:
 ```
 GET /api/v1/shifts/user/:userID
 GET /api/v1/shifts/:id
