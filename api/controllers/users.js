@@ -50,7 +50,7 @@ class Users {
 
 	delete(req, res) {
 		const id = parseInt(req.params.id, 10);
-		connection.query('DELETE FROM users WHERE id = ?', id, (err, rows, next) => {
+		connection.query('DELETE FROM users WHERE id = ?', id, (err) => {
 			if(err) throw err;
 			return res.status(200).send({ success: true });
 		});
