@@ -16,7 +16,7 @@ All times are in UTC for simplicity's sake
 	* If you do not have any previous installs of mysql, run `mysql -u root < sql/run.sql`
 	* If you do have mysql previously set up, run `mysql -u root -p < sql/run.sql` and enter your root password.
 	* If you are having root password issues, please refer to [this article](https://medium.com/@benmorel/remove-the-mysql-root-password-ba3fcbe29870)
-	*  If you want to access the databse directly the user is `scheduling` and the password is `pw`
+	*  If you want to access the databse directly through the command line or SQL tool, user=`scheduling` and password=`pw`
 *  run `npm run start` to start the application
 *  you can hit the api at `localhost:5000/api/v1`
 
