@@ -1,5 +1,5 @@
 DROP USER IF EXISTS 'scheduling'@'localhost';
-CREATE USER 'scheduling'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pw';;
+CREATE USER 'scheduling'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pw';
 
 DROP DATABASE IF EXISTS schedulingDB;
 CREATE DATABASE schedulingDB;
