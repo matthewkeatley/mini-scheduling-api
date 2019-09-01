@@ -1,6 +1,6 @@
 
 # Mini Scheduling API
-A mini RESTful API, with the intention of creating employees in a database and scheduling work shifts for them.
+A mini RESTful API with the intention of creating employees in a database and scheduling work shifts for them.
 
 ## Note 
 All times are in UTC for simplicity's sake
