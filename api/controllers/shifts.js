@@ -38,10 +38,9 @@ class Shifts {
 
 	post(req, res) {
 		const userID = parseInt(req.params.userID, 10);
-		if (!userID) return res.status(400).send({ success: false, message: 'please specify a user to get shifts for' });
+		if (!userID) return res.status(400).send({ success: false, message: 'please specify a user to post shifts for' });
 
 		const { body } = req;
-		console.log({ body });
 		const required = ['start', 'end'];
 		
 		const missing = verifyRequest.missing(body, required);
