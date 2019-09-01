@@ -1,5 +1,3 @@
-/* eslint-disable class-methods-use-this */
-// import db from '../db/db';
 import connection from '../lib/sql.js'
 import verifyRequest from '../lib/verifyRequest';
 

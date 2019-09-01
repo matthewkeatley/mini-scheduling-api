@@ -8,7 +8,7 @@ class VerifyRequest {
 
 	/**
 	 * strip out properties from req.body that are not in the table definition 
-	 * or are not updarteable
+	 * or are not updateable
 	 * @param {*} body the req.body
 	 * @param {*} allowed property names allowed in the request
 	 */
