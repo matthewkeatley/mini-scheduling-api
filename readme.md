@@ -1,23 +1,25 @@
 
 # Mini Scheduling API
-Hello! This is a mini RESTful API coding challenge, with the intention of creating employees in a database and scheduling work shifts for them. You can create, remove, update, and delete `Users` and `Shifts` using the endpoints
+A mini RESTful API, with the intention of creating employees in a database and scheduling work shifts for them.
 
 ## Note 
 All times are in UTC for simplicity's sake
 
 ## Installation
-1. Clone repo
-2. `cd` into root dir
-3. `npm i` to get necessary packages
-4. Ensure you have MySQL (version 8+) installed.  For Macs, you can run `brew install mysql`
-5. Run `mysql.server start` to start up the database
-6. Run `mysql -u root < sql/run.sql` which will build the database schema and insert some test data (if it asks for a root password, it should be `password`)
-7. If you want to access the databse directly the user is `scheduling` and the password is `pw`
-8. run `npm run start` to start the application
-9. you can hit the api at `localhost:5000/api/v1`
+*  Clone repo
+*  `cd` into root dir
+*  `npm i` to get necessary packages
+*  Ensure you have MySQL (version 8+) installed.  
+	*  For Macs, you can run `brew install mysql`
+*  Run `mysql.server start` to start up the database
+*  Run `mysql -u root < sql/run.sql` which will build the database schema and insert some test data 
+	*  If it asks for a root password, it should be `password`
+	*  If you want to access the databse directly the user is `scheduling` and the password is `pw`
+*  run `npm run start` to start the application
+*  you can hit the api at `localhost:5000/api/v1`
 
 ## Endpoints
-There is currently one example `user` in the databse (`id = 1`) and one example `shift` (`id=1`)
+There is currently an example `user` in the databse (`id = 1`) and one example `shift` (`id=1`)
 
 Users:
 ```
