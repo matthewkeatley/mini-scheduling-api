@@ -12,7 +12,7 @@ All times are in UTC for simplicity's sake
 *  Ensure you have MySQL (version 8+) installed.  
 	*  For Macs, you can run `brew install mysql`
 *  Run `mysql.server start` to start up the database
-*  Build the databse schema and example data
+*  Run the SQL start script to initialize the databse schema and insert example data:
 	* If you **DO NOT** have any previous installs of mysql:
 		* run `mysql -u root < sql/run.sql`
 	* If you **DO** have mysql previously set up:
