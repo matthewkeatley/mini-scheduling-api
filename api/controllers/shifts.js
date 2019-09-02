@@ -70,7 +70,7 @@ class Shifts {
 		let startTime = (body.start) ? javavscriptToMySQLDate(body.start) : null;
 		let endTime = (body.end) ? javavscriptToMySQLDate(body.end) : null;
 
-		if(!startTime && !endTime) return res.status(400).send({ success: false, message: `you can only modify the start or end time of an existing shit` });
+		if(!startTime && !endTime) return res.status(400).send({ success: false, message: `you can only modify the start or end time of an existing shift` });
 		
 		//check for conflicting shifts before updating
 		connection.query('SELECT * FROM shifts WHERE id = ?',shiftID, (err, curr) => {
